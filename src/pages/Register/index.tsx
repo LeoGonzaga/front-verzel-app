@@ -1,15 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  ActionButton,
-  Card,
-  Container,
-  Input,
-  SubmitButton,
-  Title,
-} from "./styles";
+import { ActionButton } from "../Login/styles";
+import { Card, Container, Input, SubmitButton, Title } from "./styles";
 
-const Login: React.FC = () => {
+const Register: React.FC = () => {
   return (
     <Container>
       <Card>
@@ -18,17 +12,17 @@ const Login: React.FC = () => {
           alt=""
           width="90%"
         />
-        <Title>Acessar minha conta</Title>
+        <Title>Criação de usuário</Title>
         <Input placeholder="Digite seu email" />
         <Input type="password" placeholder="Digite sua senha" />
+        <Input type="password" placeholder="Repita sua senha" />
         <SubmitButton>Entrar</SubmitButton>
-
-        <Link to="/register">
-          <ActionButton>Não tenho conta</ActionButton>
+        <Link to="/">
+          <ActionButton>Ir para o ínicio</ActionButton>
         </Link>
       </Card>
     </Container>
   );
 };
 
-export default Login;
+export default Register;

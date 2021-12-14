@@ -50,15 +50,3 @@ export const Title = styled.h1`
   color: #fff;
   margin: 30px 0px;
 `;
-
-export const ActionButton = styled.button`
-  background-color: transparent;
-  padding: 10px;
-  color: #fff;
-  border: none;
-  margin-top: 20px;
-
-  &:hover {
-    color: ${colors.details};
-  }
-`;
