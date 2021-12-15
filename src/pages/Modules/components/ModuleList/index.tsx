@@ -1,11 +1,16 @@
 import React from "react";
+import { BiEdit } from "react-icons/bi";
+import { MdDeleteOutline } from "react-icons/md";
 import Header from "../../../../components/Header";
-import { Container, OptionButton, Table, Td, Th, Tr } from "./styles";
+import { Container, Flex, OptionButton, Table, Td, Th, Tr } from "./styles";
 
 const ModulesList: React.FC = () => {
   return (
     <Container>
       <Header />
+      <Flex>
+        <button>Criar</button>
+      </Flex>
       <Table>
         <Tr>
           <Th>ID</Th>
@@ -16,40 +21,12 @@ const ModulesList: React.FC = () => {
           <Td>Alfreds Futterkiste</Td>
           <Td>Maria Anders</Td>
           <Td>
-            <OptionButton>E</OptionButton>
-            <OptionButton>D</OptionButton>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>Berglunds snabbköp</Td>
-          <Td>Christina Berglund</Td>
-          <Td>
-            <OptionButton>E</OptionButton>
-            <OptionButton>D</OptionButton>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>CenTro comercial Moctezuma</Td>
-          <Td>Francisco Chang</Td>
-          <Td>
-            <OptionButton>E</OptionButton>
-            <OptionButton>D</OptionButton>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>Ernst Handel</Td>
-          <Td>Roland Mendel</Td>
-          <Td>
-            <OptionButton>E</OptionButton>
-            <OptionButton>D</OptionButton>
-          </Td>
-        </Tr>
-        <Tr>
-          <Td>Island Trading</Td>
-          <Td>Helen Bennett</Td>
-          <Td>
-            <OptionButton>E</OptionButton>
-            <OptionButton>D</OptionButton>
+            <OptionButton>
+              <BiEdit size={20} color="#fff" />
+            </OptionButton>
+            <OptionButton>
+              <MdDeleteOutline size={22} color="#fff" />
+            </OptionButton>
           </Td>
         </Tr>
       </Table>
