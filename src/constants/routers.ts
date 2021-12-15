@@ -1,5 +1,7 @@
 export const routes = {
-  signIn: "signIn",
+  login: "login",
+  register: "register",
   home: "/",
   modules: "/modules",
+  moduleInfo: "/module/info",
 };

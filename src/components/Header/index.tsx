@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { routes } from "../../constants/routers";
-import { Container, SignInButton } from "./styles";
+import { ActionButton, Container, SignInButton } from "./styles";
 
 const Header: React.FC = () => {
   const navigation = useNavigate();
@@ -38,10 +38,10 @@ const Header: React.FC = () => {
       {textButton === "Sair" && (
         <>
           <Link to="/modules">
-            <SignInButton>Modulos</SignInButton>
+            <ActionButton>Modulos</ActionButton>
           </Link>
           <Link to="/login">
-            <SignInButton>Aulas</SignInButton>
+            <ActionButton>Aulas</ActionButton>
           </Link>
         </>
       )}

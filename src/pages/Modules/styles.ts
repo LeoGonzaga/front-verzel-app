@@ -62,3 +62,14 @@ export const ActionButton = styled.button`
     color: ${colors.details};
   }
 `;
+
+export const BackButton = styled.button`
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid ${colors.details};
+  color: ${colors.details};
+  border-radius: 4px;
+`;
